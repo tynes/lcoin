@@ -8,8 +8,9 @@ const index = fs.readFileSync(`${__dirname}/index.html`);
 const app = fs.readFileSync(`${__dirname}/app.js`);
 const worker = fs.readFileSync(`${__dirname}/worker.js`);
 
+// TODO: remove bitcoin specific ports
 const proxy = new WSProxy({
-  ports: [8333, 18333, 18444, 28333, 28901]
+  ports: [8333, 18333, 18444, 28333, 28901, 9333, 19333]
 });
 
 const server = bweb.server({

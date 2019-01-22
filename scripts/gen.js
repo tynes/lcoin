@@ -33,7 +33,7 @@ function createGenesisBlock(options) {
         hash: consensus.ZERO_HASH,
         index: 0xffffffff
       },
-      script: Script()
+      script: Script() // TODO: this is not correct
         .pushInt(486604799)
         .pushPush(Buffer.from([4]))
         .pushData(flags)
