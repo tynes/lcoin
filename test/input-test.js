@@ -55,7 +55,7 @@ describe('Input', function() {
     const prevout = input.prevout.toRaw();
 
     assert.strictEqual(type, 'pubkeyhash');
-    assert.strictEqual(addr, '1PM9ZgAV8Z4df1md2zRTF98tPjzTAfk2a6');
+    assert.strictEqual(addr, 'Lha6ptUKDDJgupTnD8QkXACebxMjFtmfTg');
     assert.strictEqual(input.isCoinbase(), false);
 
     assert.strictEqual(input.isFinal(), true);
@@ -106,7 +106,7 @@ describe('Input', function() {
 
     assert.strictEqual(type, 'scripthash');
     assert.strictEqual(subtype, 'multisig');
-    assert.strictEqual(addr, '3416sTvfjDT8YPJ6PywJE1Pm2GgWiv2guz');
+    assert.strictEqual(addr, 'MADFBMLdgLJZLtZzVrve3eeALyGxkhffEb');
     assert.strictEqual(input.isCoinbase(), false);
 
     assert.strictEqual(input.isFinal(), false);
